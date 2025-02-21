@@ -1,0 +1,414 @@
+/* Estilo Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    margin-bottom: 1px;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+h2.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #00ff08;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(1.05);
+}
+
+
+
+
+
+/* Estilo Do Cabeçario */
+header {
+    padding: 10px 4%;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: #000;
+    font-size: 16px;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header a {
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+    margin-left: 20px;
+}
+
+header .interface .logo img {
+    width: 100px;
+    height: auto;
+}
+
+
+
+
+
+/* Estilo Topo Do Site */
+section.topo-do-site {
+    padding: 40px 4%;
+    margin-top: 110px;
+    margin-bottom: 180px;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site h1 span {
+    color: #00ff08;
+    font-size: 84px;
+}
+
+.topo-do-site p {
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+
+
+
+
+/* PORTIFOLIO */
+.portifolio-box {
+    border-radius: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 1s ease-in-out;
+    flex-shrink: 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.portifolio-box {
+    flex: 0 0 100%;
+}
+
+.portifolio-box:hover {
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.btn-site {
+    position: absolute;
+    bottom: 30px;
+    left: 10%;
+    transform: translateX(0);
+}
+
+.portifolio h1 {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+.portifolio h1 span {
+    color: #00ff08;
+}
+
+.texto-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    text-align: justify;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.texto-container h3,
+.texto-container h2,
+.texto-container h4,
+.texto-container p {
+    margin: 10px 0;
+}
+
+.linha {
+    border-top: 2px solid #00ff08;
+    margin: 10px 0;
+}
+
+.imagem-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    max-width: 100%;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-left: 5px solid #000;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn-site button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-site button:hover {
+    background-color: #00cc06;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 1;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.swiper-pagination-bullet.active {
+    opacity: 1;
+    background-color: #00ff08;
+}
+
+@media (max-width: 768px) {
+    .portifolio-box {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .imagem-container {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .project-image {
+        max-width: 100%;
+    }
+
+    .texto-container {
+        max-width: 100%;
+    }
+}
+
+section.servicos {
+    padding: 40px 4%;
+
+}
+
+section.servicos .flex {
+    gap: 60px;
+}
+
+.servicos .servicos-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.servicos .servicos-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 60px #ffffff77;
+}
+
+.servicos .servicos-box i {
+    font-size: 70px;
+    color: #00ff08;
+}
+
+.servicos .servicos-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.servicos h1 {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+.servicos h1 span {
+    color: #00ff08;
+}
+
+
+
+
+
+/* palnos */
+.planos h1 {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+.planos h1 span {
+    color: #00ff08;
+}
+
+.planos h1 span2 {
+    color: #5ef763;
+}
+
+.planos h3 {
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.planos ul li {
+    color: #fff;
+    list-style-type: none;
+    padding-left: 25px;
+    position: relative;
+}
+
+.planos ul li i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    color: #5ef763;
+}
+
+.planos .planos-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.planos .planos-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 60px #ffffff77;
+}
+
+.planos .planos-box h3 {
+    margin: 15px 0;
+    font-size: 28px;
+}
+
+.planos ul li i.fa-times-circle {
+    color: red;
+}
